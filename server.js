@@ -1,5 +1,5 @@
-const app = require("./app");
-const { connectDB } = require("./config/db");
+const app = require("./src/app"); // ✅ Correct path to app.js
+const { connectDB } = require("./src/config/db"); // ✅ Correct path to db.js
 
 const PORT = process.env.PORT || 3000;
 

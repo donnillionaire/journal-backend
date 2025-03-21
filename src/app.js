@@ -7,7 +7,7 @@ const swaggerUi = require("swagger-ui-express");
 const swaggerSpec = require("./docs/swagger.json");
 
 const { connectDB } = require("./config/db");
-const journalRoutes = require("./routes/journalRoutes");
+// const journalRoutes = require("./routes/journalRoutes");
 const authRoutes = require("./routes/authRoutes");
 
 const app = express();
@@ -24,7 +24,7 @@ if (process.env.NODE_ENV !== "production") {
 }
 
 // 📌 Routes
-app.use("/api/journals", journalRoutes);
+// app.use("/api/journals", journalRoutes);
 app.use("/api/auth", authRoutes);
 
 // 🛑 Error Handling Middleware
